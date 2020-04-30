@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nubank</string>
+    <string name="channel_name">MyChannelName</string>
+    <string name="channel_description">MyChannelDescription</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edittextTitulo"
+        android:layout_width="144dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewTitulo"
+        android:layout_width="49dp"
+        android:layout_height="19dp"
+        android:text="Título"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextTitulo"
+        app:layout_constraintEnd_toStartOf="@+id/edittextTitulo"
+        app:layout_constraintTop_toTopOf="@+id/edittextTitulo" />
+
+    <EditText
+        android:id="@+id/edittextTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextTitulo" />
+
+    <Button
+        android:id="@+id/buttonNotificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Notificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextInicioem" />
+
+    <EditText
+        android:id="@+id/edittextIntervalo"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
+
+    <TextView
+        android:id="@+id/textviewTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextTexto"
+        app:layout_constraintEnd_toStartOf="@+id/edittextTexto"
+        app:layout_constraintTop_toTopOf="@+id/edittextTexto" />
+
+    <TextView
+        android:id="@+id/textviewIntervalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intervalo(s)"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextIntervalo"
+        app:layout_constraintEnd_toStartOf="@+id/edittextIntervalo"
+        app:layout_constraintTop_toTopOf="@+id/edittextIntervalo" />
+
+    <TextView
+        android:id="@+id/textviewInicioem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Início em(s)"
+        app:layout_constraintBottom_toBottomOf="@+id/edittextInicioem"
+        app:layout_constraintEnd_toStartOf="@+id/edittextInicioem"
+        app:layout_constraintTop_toTopOf="@+id/edittextInicioem" />
+
+    <EditText
+        android:id="@+id/edittextInicioem"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextIntervalo" />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:text="+"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextTexto" />
+
+    <Button
+        android:id="@+id/buttonEscolhersom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ESCOLHER SOM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotificar" />
+
+    <EditText
+        android:id="@+id/edittextQtd"
+        android:layout_width="96dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Qtd(0 = loop)"
+        android:inputType="time"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPlus"
+        app:layout_constraintEnd_toStartOf="@+id/buttonPlus"
+        app:layout_constraintTop_toTopOf="@+id/buttonPlus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
